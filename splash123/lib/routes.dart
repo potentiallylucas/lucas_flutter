@@ -121,7 +121,7 @@ class Route2 extends StatelessWidget {
                   child: Text("add 1", style: ts),
                 ),
                 ElevatedButton(
-                  onPressed: () {
+                  onPressed: () { // wrap Route1 in blocprovider so it doesn't crash
                     Navigator.of(context).push(
                       MaterialPageRoute(builder: (context) => BlocProvider<CounterCubit>.value(
                         value: cc,
@@ -148,7 +148,7 @@ class Route2 extends StatelessWidget {
   }
 }
 
-class Route3 extends StatelessWidget {
+class Route3 extends StatelessWidget { // same as Route2
   final String title = "Route3";
   final CounterCubit cc;
   Route3({required this.cc, super.key});
