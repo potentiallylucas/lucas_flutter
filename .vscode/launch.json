@@ -1,0 +1,268 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "boggle",
+            "cwd": "boggle",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "boggle (profile mode)",
+            "cwd": "boggle",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "boggle (release mode)",
+            "cwd": "boggle",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "deal_no_deal",
+            "cwd": "deal_no_deal",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "deal_no_deal (profile mode)",
+            "cwd": "deal_no_deal",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "deal_no_deal (release mode)",
+            "cwd": "deal_no_deal",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "first_flutter",
+            "cwd": "first_flutter",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "first_flutter (profile mode)",
+            "cwd": "first_flutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "first_flutter (release mode)",
+            "cwd": "first_flutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "food2",
+            "cwd": "food2",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "food2 (profile mode)",
+            "cwd": "food2",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "food2 (release mode)",
+            "cwd": "food2",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "foodlab",
+            "cwd": "foodlab",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "foodlab (profile mode)",
+            "cwd": "foodlab",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "foodlab (release mode)",
+            "cwd": "foodlab",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "grid",
+            "cwd": "grid",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "grid (profile mode)",
+            "cwd": "grid",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "grid (release mode)",
+            "cwd": "grid",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "grid_stuff",
+            "cwd": "grid_stuff",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "grid_stuff (profile mode)",
+            "cwd": "grid_stuff",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "grid_stuff (release mode)",
+            "cwd": "grid_stuff",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "groceries",
+            "cwd": "groceries",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "groceries (profile mode)",
+            "cwd": "groceries",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "groceries (release mode)",
+            "cwd": "groceries",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "hydrate_chess",
+            "cwd": "hydrate_chess",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "hydrate_chess (profile mode)",
+            "cwd": "hydrate_chess",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "hydrate_chess (release mode)",
+            "cwd": "hydrate_chess",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "midterm_prep",
+            "cwd": "midterm_prep",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "midterm_prep (profile mode)",
+            "cwd": "midterm_prep",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "midterm_prep (release mode)",
+            "cwd": "midterm_prep",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "quizzle",
+            "cwd": "quizzle",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "quizzle (profile mode)",
+            "cwd": "quizzle",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "quizzle (release mode)",
+            "cwd": "quizzle",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "splash123",
+            "cwd": "splash123",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "splash123 (profile mode)",
+            "cwd": "splash123",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "splash123 (release mode)",
+            "cwd": "splash123",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "yahtzee",
+            "cwd": "yahtzee",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "yahtzee (profile mode)",
+            "cwd": "yahtzee",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "yahtzee (release mode)",
+            "cwd": "yahtzee",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}

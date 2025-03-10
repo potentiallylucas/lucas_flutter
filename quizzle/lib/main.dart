@@ -111,7 +111,7 @@ class MyHomePage extends StatelessWidget {
             BlocBuilder<QuestionAnswer, Map<String, String>>(
               builder: (context, state) {
                 List keys = state.keys.toList();
-                TextEditingController _controller = TextEditingController();
+                TextEditingController controller = TextEditingController();
                 return Column(children: [
                   Text(
                     BlocProvider.of<QuestionAnswer>(context).initialized
@@ -120,14 +120,14 @@ class MyHomePage extends StatelessWidget {
                     style: Theme.of(context).textTheme.headlineMedium,
                   ),
                   TextField(
-                    controller: _controller,
+                    controller: controller,
                   ),
                   ElevatedButton(
                     onPressed: () {
                       if(!BlocProvider.of<QuestionAnswer>(context).initialized){
                         BlocProvider.of<QuestionAnswer>(context).initialize();
                       }
-                      else if(BlocProvider.of<QuestionAnswer>(context).checkAnswer(keys[BlocProvider.of<QuestionAnswer>(context).index], _controller.text)){
+                      else if(BlocProvider.of<QuestionAnswer>(context).checkAnswer(keys[BlocProvider.of<QuestionAnswer>(context).index], controller.text)){
                         BlocProvider.of<QuestionAnswer>(context).increment();
                         showDialog(context: context, builder: (BuildContext context) => Correct());
                       } else {showDialog(context: context, builder: (BuildContext context) => Incorrect());}

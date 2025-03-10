@@ -26,7 +26,7 @@ void main() {
 }
 
 class RoutesDemo extends StatelessWidget {
-  RoutesDemo({super.key});
+  const RoutesDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -37,6 +37,8 @@ class RoutesDemo extends StatelessWidget {
 
 // TobBloc layer makes/provides the CounterCubit.
 class TopBloc extends StatelessWidget {
+  const TopBloc({super.key});
+
   @override
   Widget build(BuildContext context) {
     return BlocProvider<CounterCubit>(
@@ -53,6 +55,8 @@ class TopBloc extends StatelessWidget {
 // from the context, so all we need is Scaffold.
 class Route1 extends StatelessWidget {
   final String title = "Route1";
+
+  const Route1({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -99,7 +103,7 @@ class Route1 extends StatelessWidget {
 class Route2 extends StatelessWidget {
   final String title = "Route2";
   final CounterCubit cc;
-  Route2({required this.cc, super.key});
+  const Route2({required this.cc, super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -151,7 +155,7 @@ class Route2 extends StatelessWidget {
 class Route3 extends StatelessWidget { // same as Route2
   final String title = "Route3";
   final CounterCubit cc;
-  Route3({required this.cc, super.key});
+  const Route3({required this.cc, super.key});
 
   @override
   Widget build(BuildContext context) {
