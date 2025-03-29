@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:http/http.dart' as http;
@@ -62,7 +61,7 @@ class MyHomePage extends StatelessWidget {
           children: <Widget>[
             BlocBuilder<GetWeather, String>(
               builder: (context, state) {
-                return Text('${state} degrees Celsius', style: TextStyle(fontSize: 50),);
+                return Text('$state degrees Celsius', style: TextStyle(fontSize: 50),);
               },
             ),
             ElevatedButton(onPressed: BlocProvider.of<GetWeather>(context).apiCall, child: Text('Refresh'))
