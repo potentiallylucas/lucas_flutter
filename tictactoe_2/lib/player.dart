@@ -72,6 +72,8 @@ class Player3 extends StatelessWidget {
     GameCubit gc = BlocProvider.of<GameCubit>(context);
     GameState gs = gc.state;
     bool isMyTurn = gs.myTurn;
+    YakCubit yc = BlocProvider.of<YakCubit>(context);
+
 
 
     void send() {
@@ -79,6 +81,7 @@ class Player3 extends StatelessWidget {
       if (text.isNotEmpty) {
         print(text);
         gc.addChat(text);
+        yc.say("chat $text");
       }
     }
 

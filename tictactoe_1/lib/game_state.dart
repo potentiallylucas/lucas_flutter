@@ -16,7 +16,8 @@ class GameState {
 
 class GameCubit extends Cubit<GameState> {
   static final String d = ".";
-  GameCubit(bool myt) : super(GameState(myt, myt, [d, d, d, d, d, d, d, d, d], []));
+  GameCubit(bool myt)
+    : super(GameState(myt, myt, [d, d, d, d, d, d, d, d, d], []));
 
   update(int where, String what) {
     state.board[where] = what;
@@ -25,16 +26,14 @@ class GameCubit extends Cubit<GameState> {
   }
 
   void addChat(String msg) {
-  final updatedChat = List<Widget>.from(state.chat)..add(Text(msg));
-  emit(GameState(state.iStart, state.myTurn, state.board, updatedChat));
-}
-
+    final updatedChat = List<Widget>.from(state.chat)..add(Text(msg));
+    emit(GameState(state.iStart, state.myTurn, state.board, updatedChat));
+  }
 
   String whoami() {
     String mark = state.myTurn == state.iStart ? "x" : "o";
     return mark;
   }
-  
 
   play(int where, BuildContext context) {
     String mark = state.myTurn == state.iStart ? "x" : "o";
@@ -100,7 +99,19 @@ class GameCubit extends Cubit<GameState> {
   }
 
   void resetGame() {
-    emit(GameState(state.iStart, state.iStart, [d, d, d, d, d, d, d, d, d], state.chat));
+    emit(
+      GameState(state.iStart, state.iStart, [
+        d,
+        d,
+        d,
+        d,
+        d,
+        d,
+        d,
+        d,
+        d,
+      ], state.chat),
+    );
     print("Game has been reset!");
   }
 
@@ -112,6 +123,10 @@ class GameCubit extends Cubit<GameState> {
     if (parts[0] == "sq") {
       int sqNum = int.parse(parts[1]);
       play(sqNum, context);
+    } else if (parts[0] == "chat") {
+      String chatMessage = msg.substring(5);
+      final updatedChat = List<Widget>.from(state.chat)..add(Text(chatMessage));
+      emit(GameState(state.iStart, state.myTurn, state.board, updatedChat));
     }
   }
 }
