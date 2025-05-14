@@ -66,7 +66,7 @@ class Dragger extends StatelessWidget {
 }
 
 class Dragger2 extends StatelessWidget {
-  Dragger2({super.key});
+  const Dragger2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -90,7 +90,7 @@ class Tile extends StatelessWidget {
   final String face;
   final Coords here;
   final Curve curve;
-  Tile(this.face, this.here, this.curve);
+  const Tile(this.face, this.here, this.curve, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -103,7 +103,7 @@ class Tile2 extends AnimatedPositioned {
   final Coords where;
   final Curve animCurve;
 
-  Tile2(this.face, this.where, this.animCurve)
+  Tile2(this.face, this.where, this.animCurve, {super.key})
     : super(
         duration: Duration(seconds: 1),
         curve: animCurve,
